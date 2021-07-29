@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Auto-Rotating Image Carousel Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>W3C Carousel</h1>
+
+<p>This carousel is based on w3c Carousel example</p>
+<div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
+<div id="ex1">
+<section id="myCarousel"
+         class="carousel"
+         aria-roledescription="carousel"
+         aria-label="Highlighted television shows">
+  <div class="carousel-inner">
+    <div class="controls">
+      <button class="rotation pause" aria-label="Stop automatic slide show">
+        <svg width="42"
+             height="34"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg">
+          <rect class="background"
+                x="2"
+                y="2"
+                rx="5"
+                ry="5"
+                width="38"
+                height="24"></rect>
+          <rect class="border"
+                x="4"
+                y="4"
+                rx="5"
+                ry="5"
+                width="34"
+                height="20"></rect>
+          <polygon class="pause" points="17 8 17 20"></polygon>
+          <polygon class="pause" points="24 8 24 20"></polygon>
+          <polygon class="play" points="15 8 15 20 27 14"></polygon>
+        </svg>
+      </button>
+      
+      <button class="previous"
+              aria-controls="myCarousel-items"
+              aria-label="Previous Slide" tabindex="0">
+       <i class="arrow left"></i>
+    </button>
+        
+      <button class="next"
+              aria-controls="myCarousel-items"
+              aria-label="Next Slide" tabindex="0">
+        <i class="arrow right"></i>
+      </button>
+    </div>
+    <div id="myCarousel-items"
+         class="carousel-items"
+         aria-live="off">
+      <div class="carousel-item active"
+           role="group"
+           aria-roledescription="slide"
+           aria-label="1 of 5">
+        <div class="carousel-image">
+          <a href="http://cade.com.br">
+            <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/amsterdamslide__800x600.jpg" alt="Walking Tour in Amsterdam">
+          </a>
+        </div>
+        <div class="carousel-caption">
+          <h3>
+            <a href="#" id="carousel-label-1">
+              Dynamic Europe: Amsterdam, Prague, Berlin 2
+            </a>
+          </h3>
+          <div class="hidden-xs hidden-sm">
+            <p>
+              <span class="contrast">
+                7 pm Tuesday, March 3, on TV
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- .carousel-caption -->
+      </div>
+      <!-- .item -->
+      <div class="carousel-item"
+           role="group"
+           aria-roledescription="slide"
+           aria-label="2 of 5">
+        <div class="carousel-image">
+          <a href="#">
+            <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/lands-endslide__800x600.jpg" alt="Land's End in Cornwall">
+          </a>
+        </div>
+        <div class="carousel-caption">
+          <h3>
+            <a href="#" id="carousel-label-2">
+              Travel to Southwest England and Paris
+            </a>
+          </h3>
+          <div>
+            <p>
+              <span class="contrast">
+                Sept. 14 to Sept. 24 or 27
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- .carousel-caption -->
+      </div>
+      <!-- .item -->
+      <div class="carousel-item"
+           role="group"
+           aria-roledescription="slide"
+           aria-label="3 of 5">
+        <div class="carousel-image">
+          <a href="#">
+            <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
+          </a>
+        </div>
+        <div class="carousel-caption">
+          <h3>
+            <a href="#" id="carousel-label-3">
+              Great Children's Programming on Public TV
+            </a>
+          </h3>
+          <div>
+          </div>
+        </div>
+        <!-- .carousel-caption -->
+      </div>
+      <!-- .item -->
+      <div class="carousel-item"
+           role="group"
+           aria-roledescription="slide"
+           aria-label="4 of 5">
+        <div class="carousel-image">
+          <a href="#">
+            <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/foyleswarslide__800x600.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
+          </a>
+        </div>
+        <div class="carousel-caption">
+          <h3>
+            <a href="#" id="carousel-label-4">
+              Foyle’s War Revisited
+            </a>
+          </h3>
+          <div>
+            <p>
+              <span class="contrast">
+                8 pm Sunday, March 8, on TV: Sneak peak at the final season.
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- .carousel-caption -->
+      </div>
+      
+      <!-- .item -->
+      <div class="carousel-item"
+           role="group"
+           aria-roledescription="slide"
+           aria-label="5 of 5">
+        <div class="carousel-image">
+          <a href="#">
+            <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set">
+          </a>
+        </div>
+        <div class="carousel-caption">
+          <h3>
+            <a href="#" id="carousel-label-6">
+              Mid-American Gardener: Thursdays at 7 pm
+            </a>
+          </h3>
+          <div class="hidden-xs hidden-sm">
+            <p>
+              <span class="contrast">
+                Watch the latest episodes.
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- .carousel-caption -->
+      </div>
+      <!-- .item -->
+    </div>
+   
+  </div>
+ <div id="renderDots" class="renderDots"></div>
+  <!-- carousel-inner -->
+</section>
+   
+<!-- /.carousel -->
+<div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
+  
+  <p>
+    Reference link: <a href="https://www.w3.org/TR/wai-aria-practices/examples/carousel/carousel-1.html" alt="open W3C Website for carousel example" target="_blank">https://www.w3.org/TR/wai-aria-practices/examples/carousel/carousel-1.html</a>
+  </p>
+<!-- partial -->
+  <script src='https://www.w3.org/TR/wai-aria-practices/examples/carousel/js/carouselItem.js'></script>
+<script src='https://www.w3.org/TR/wai-aria-practices/examples/carousel/js/carouselButtons.js'></script>
+<script src='https://www.w3.org/TR/wai-aria-practices/examples/carousel/js/pauseButton.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
